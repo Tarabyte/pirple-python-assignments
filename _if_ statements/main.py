@@ -1,8 +1,7 @@
-'''
-Homework Assignment #3: "If" Statements
+"""Homework Assignment #3: "If" Statements
 
 Create a function that accepts 3 parameters and checks for equality between any two of them.
-'''
+"""
 
 
 def hasEqual(a, b, c):
