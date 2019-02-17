@@ -13,22 +13,13 @@ If the value does exist, it should not be added, and the function should return 
 myUniqueList = []
 
 
-def _exists(item, list):
-    """Utility function to check if item exists in list"""
-    for element in list:
-        if element == item:
-            return True
-
-    return False
-
-
 def add_to_unique_list(value):
     """Check if value exists in myUniqueList
 
     If the value exists, returns False
     If the value does not exist, pushes it to myUniqueList and returns True
     """
-    if _exists(value, myUniqueList):
+    if value in myUniqueList:
         return False
 
     myUniqueList.append(value)
@@ -43,7 +34,7 @@ def add_to_unique_list_tracking_rejects(value):
 
     Tracks rejected values by adding it to myLeftovers list
     """
-    if _exists(value, myUniqueList):
+    if value in myUniqueList:
         myLeftovers.append(value)
         return False
 
