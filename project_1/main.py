@@ -1,5 +1,3 @@
-from termcolor import colored, cprint
-import sys
 """
 Project #1: A Simple Game
 In this project, your task is create a Connect 4 game in Python.
